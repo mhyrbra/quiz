@@ -6,7 +6,7 @@ export const questions = [
       { text: '(۲) کتاب‌خونه', isCorrect: false },
       { text: '(۳) استاکرت بودم تعقیبت می‌کردم', isCorrect: false },
       {
-        text: '(۴) آرزوت کردم خدا زارت آفریدت کصدست بودانداختت کرج',
+        text: '(۴) آرزوت کردم خدا زارت آفریدت کصدست بود انداختت کرج',
         isCorrect: false,
       },
     ],
@@ -50,7 +50,7 @@ export const questions = [
   {
     question: 'کدوم عضو از بدنت رو بیشتر دوست دارم؟',
     options: [
-      { text: '(۱) لب', isCorrect: false },
+      { text: '(۱) لبام', isCorrect: false },
       { text: '(۲) چشمام', isCorrect: false },
       { text: '(۳) پام (می‌دونستم مثل سگ فوت فتیشی)', isCorrect: false },
       {
