@@ -29,7 +29,7 @@ const Quiz = ({ finishQuiz }) => {
     if (currentQuestion + 1 < questions.length) {
       setCurrentQuestion(currentQuestion + 1);
       setSelectedAnswer(null);
-      setTimeLeft(10);
+      setTimeLeft(15);
     } else {
       setShowResult(true);
       setTimeout(() => finishQuiz(score), 3000);
@@ -49,7 +49,7 @@ const Quiz = ({ finishQuiz }) => {
           <div className='w-1/2 bg-gray-300 h-2 rounded mt-4'>
             <div
               className='bg-pink-500 h-2 rounded'
-              style={{ width: `${(timeLeft / 10) * 100}%` }}
+              style={{ width: `${(timeLeft / 15) * 100}%` }}
             ></div>
           </div>
           <div className='mt-10'>
