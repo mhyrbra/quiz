@@ -6,7 +6,7 @@ const Quiz = ({ finishQuiz }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(15);
+  const [timeLeft, setTimeLeft] = useState(30);
 
   useEffect(() => {
     if (timeLeft > 0) {
@@ -29,7 +29,7 @@ const Quiz = ({ finishQuiz }) => {
     if (currentQuestion + 1 < questions.length) {
       setCurrentQuestion(currentQuestion + 1);
       setSelectedAnswer(null);
-      setTimeLeft(15);
+      setTimeLeft(30);
     } else {
       setShowResult(true);
       setTimeout(() => finishQuiz(score), 3000);
@@ -49,7 +49,7 @@ const Quiz = ({ finishQuiz }) => {
           <div className='w-1/2 bg-gray-300 h-2 rounded mt-4'>
             <div
               className='bg-pink-500 h-2 rounded'
-              style={{ width: `${(timeLeft / 15) * 100}%` }}
+              style={{ width: `${(timeLeft / 30) * 100}%` }}
             ></div>
           </div>
           <div className='mt-10'>
@@ -72,7 +72,7 @@ const Quiz = ({ finishQuiz }) => {
           <p className='mt-2 text-gray-700'>⏳{timeLeft} :ثانیه </p>
         </>
       ) : (
-        <h2 className=' text-3xl font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 bg-clip-text text-transparent animate-pulse'>
+        <h2 className=' text-3xl font-bold bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 bg-clip-text text-transparent animate-pulse p-1'>
           ...نتایج در حال محاسبه
         </h2>
       )}
